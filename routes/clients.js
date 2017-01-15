@@ -11,12 +11,16 @@ var Client = require('../models/issueimages');
           if(err) {
             res.status(400).send(err);
           } else {
+            console.log('res', res);
             res.send(trees);
           }
         });
     })
     .post((req, res) => {
       var client = new Client(req.body);
+
+      console.log('client', req.body);
+
       client.save((err, savedClient) => {
         res.status(err ? 400 : 200).send(err || savedClient);
       });
