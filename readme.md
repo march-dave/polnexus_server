@@ -1,1 +1,1 @@
-https://git.heroku.com/polnexusserver.git
+https://polnexusserver.herokuapp.com/
