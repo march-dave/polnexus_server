@@ -11,7 +11,6 @@ var Client = require('../models/issueimages');
           if(err) {
             res.status(400).send(err);
           } else {
-            // console.log('res', res);
             res.send(trees);
           }
         });
